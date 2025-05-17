@@ -1,7 +1,6 @@
 import { useParams, Route, Link, useRouteMatch } from "react-router-dom";
 import { useEffect } from "react";
 import { getSinglePoem } from "../lib/api2";
-import { useSelector } from "react-redux";
 import Comments from "../components/comments/Comments";
 import HighlightedPoem from "../components/Poems/HighlightedPoem";
 import useHttp from "../hooks/use-http";

@@ -3,8 +3,6 @@ import { useHistory } from "react-router-dom";
 import PoemForm from "../components/Poems/PoemFrom";
 import useHttp from "../hooks/use-http";
 import { addPoem } from "../lib/api2";
-import { useSelector } from "react-redux";
-import NotFound from "./NotFound";
 
 const AddPoem = (props) => {
   const { sendRequest, status } = useHttp(addPoem);

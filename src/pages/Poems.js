@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import PoemList from "../components/Poems/PoemList";
 import NoPoemsFound from "../components/Poems/NoPoemsFound";
 import LoadingSpinner from "../components/UI/LoadingSpinner";
-import { useSelector } from "react-redux";
 
 const Poems = () => {
   const {
