@@ -9,7 +9,6 @@ import NotFound from "./NotFound";
 const AddPoem = (props) => {
   const { sendRequest, status } = useHttp(addPoem);
   const history = useHistory();
-  const username = useSelector((state) => state.username);
 
   useEffect(() => {
     if (status === "completed") {
@@ -20,9 +19,6 @@ const AddPoem = (props) => {
   const AddPoemHandler = (poemData) => {
     sendRequest(poemData);
   };
-  if (!["Kick", "akanksha_29"].includes(username)) {
-    return <NotFound />;
-  }
   return (
     <PoemForm isLoading={status === "pending"} onAddPoem={AddPoemHandler} />
   );

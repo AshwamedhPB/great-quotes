@@ -6,11 +6,9 @@ import Comments from "../components/comments/Comments";
 import HighlightedPoem from "../components/Poems/HighlightedPoem";
 import useHttp from "../hooks/use-http";
 import LoadingSpinner from "../components/UI/LoadingSpinner";
-import NotFound from "./NotFound";
 
 const PoemDetails = () => {
   const params = useParams();
-  const username = useSelector((state) => state.username);
   const { poemId } = params;
   const {
     sendRequest,
@@ -35,10 +33,6 @@ const PoemDetails = () => {
 
   if (error) {
     return <p className="centered">{error}</p>;
-  }
-
-  if (!["Kick", "akanksha_29"].includes(username)) {
-    return <NotFound />;
   }
   if (!loadedPoem.text) {
     return <p>No Poem Found!</p>;

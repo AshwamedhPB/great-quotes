@@ -5,10 +5,8 @@ import PoemList from "../components/Poems/PoemList";
 import NoPoemsFound from "../components/Poems/NoPoemsFound";
 import LoadingSpinner from "../components/UI/LoadingSpinner";
 import { useSelector } from "react-redux";
-import NotFound from "./NotFound";
 
 const Poems = () => {
-  const username = useSelector((state) => state.username);
   const {
     sendRequest,
     status,
@@ -26,9 +24,6 @@ const Poems = () => {
         <LoadingSpinner />
       </div>
     );
-  }
-  if (!["Kick", "akanksha_29"].includes(username)) {
-    return <NotFound />;
   }
 
   if (error) {
