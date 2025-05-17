@@ -1,0 +1,33 @@
+.formTitle {
+  text-align: center;
+}
+
+.mainform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainform .inputfield {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainform input {
+  padding: 5px;
+  margin: 5px;
+}
+
+.actions {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .formTitle,
+  .mainform {
+    font-size: 1.45rem;
+  }
+}

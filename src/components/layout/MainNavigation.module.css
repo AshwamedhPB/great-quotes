@@ -1,0 +1,150 @@
+html {
+  font-size: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  padding: 0 10%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #008080;
+}
+
+.logo a {
+  font-family: "Luxurious Roman", cursive;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.logo span:first-child {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: black;
+}
+
+.logo span:last-child {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: rgb(194, 170, 36);
+}
+
+.logo a:hover,
+.logo a:active {
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-left: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #88dfdf;
+  padding: 6px 10px;
+  cursor: pointer;
+  border: 1px solid #88dfdf;
+  border-radius: 3px;
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a.active {
+  color: #e6fcfc;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 990px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .header {
+    flex-direction: column;
+    height: 6rem;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-top: 5px;
+    margin-right: auto;
+    font-size: 2rem;
+    color: white;
+  }
+  .nav ul {
+    margin: 10px 0;
+    display: inline-block;
+    width: 100%;
+  }
+  .nav li {
+    margin: 0;
+    padding: 0 2px;
+    font-size: 1.2rem;
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-top: 5px;
+    margin-right: auto;
+    font-size: 2rem;
+    color: white;
+  }
+  .nav ul {
+    margin: 10px 0;
+    display: inline-block;
+    width: 100%;
+  }
+  .nav li {
+    margin: 0;
+    padding: 0 2px;
+    font-size: 1.2rem;
+    display: inline;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: #88dfdf;
+    padding: 3px 5px;
+    cursor: pointer;
+    border: 1px solid #88dfdf;
+    border-radius: 3px;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .header {
+    padding: 2%;
+  }
+}
